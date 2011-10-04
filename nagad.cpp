@@ -103,7 +103,10 @@ int main (int argc, char *argv[])
   int fd, rd, value, size = sizeof (struct input_event);
   char name[256] = "Unknown";
   const char *device = NULL;
-
+	if(daemon(0,0)){
+		printf("Could not start as daemon\n");
+		return -1;
+	}
 
     device = "/dev/naga_keyboard";
 

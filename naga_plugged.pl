@@ -19,7 +19,7 @@ $user = 0;
 for($i= 0; $i < @lines; $i++){
 	my $l;
 	$l = @lines[$i];
-	if($l =~ /xserver/){
+	if($l =~ /xserver/ || $l=~ /session/){
 		if($l =~ /^(\S+)/){
 			$user = $1; 
 		}
