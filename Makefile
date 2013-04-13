@@ -1,4 +1,3 @@
-
 .PHONEY: install all
 all: nagad
 
@@ -12,7 +11,7 @@ install: nagad
 
 uninstall:
 	rm -f /etc/udev/rules.d/naga.rules
-	rm -f /usr/local/bin/naged
+	rm -f /usr/local/bin/nagad
 	rm -f /usr/local/bin/naga_plugged.pl
 	rm -f /usr/local/bin/naga_disablekbd.pl
 
