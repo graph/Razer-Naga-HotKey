@@ -32,7 +32,7 @@ char basedir[1024];
 void init(){
 	memset(basedir, 0, sizeof(basedir));
 	strcpy(basedir, getenv("HOME"));
-	strcat(basedir, "/.naga");
+	strcat(basedir, "/.config/naga");
 	printf("Using directory %s\n", basedir);
 	
 	char xauth[2048];
